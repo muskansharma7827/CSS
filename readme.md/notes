@@ -158,3 +158,90 @@ like #1111ff03, extra 2 digits at last is alpha value.
  background-color: hsl(187, 94%, 50%), h is hue, means 0,360 means red, 120 means green, 240 means blue.satruration means the intensity of color,l means lightness, also hsla, means alpha, means transparency.
 
 now, Box Model-
+in css box model, around the box, can apply teh border.
+css box model basically means that whaetver enter the content into web page, css box model render(display) it in a box, like rectangle.
+css box model has 4 parts- content , padding , border , margin.
+if any content name- muskan, - content
+                     around muskan - padding
+                     around padding - border
+                     around border - margin.
+ now, u can add padding, and margin also.
+ u can also see content,padding,margin,border. when click inspect .
+ padding: 45px 40px 35px 30px; means top right bottom left
+ padding: 80px 30px; means top-bottom  left-right
+ padding: 50px; means all 4 directions - 50px
+
+ now margin- margin: 50px 100px 30px 20px; means top right bottom left
+              margin: 50px 100px; means top-bottom left-right
+==>Quick shorthand rules:
+1 value → all sides equal
+2 values → top/bottom, left/right
+3 values → top, left/right, bottom
+4 values → top, right, bottom, left
+
+<span> is inline by default, so it ignores width and height.
+To apply width/height, change its display:
+span { display: inline-block; width: 200px; height: 50px; }
+
+in good codes, apply universal selector that ismply means that padding and margin will be 0 , sp syntax is -
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+</style>
+
+what is Box-sizing and why it is considered a box-sizing equals to border-box. ==>
+box-sizing decides how width/height are calculated.
+
+content-box (default)--
+Width/height apply only to content.
+Padding + border are added outside → box becomes bigger than the set size.
+Example: width: 200px; padding: 20px; border: 10px; → Final width = 260px.
+
+border-box--
+Width/height include content + padding + border.
+The box size stays exactly what you set.
+Example: width: 200px; padding: 20px; border: 10px; → Final width = 200px.
+Best practice: Use border-box globally (* { box-sizing: border-box; }) → layouts are predictable, no surprise growth when adding padding/borders.
+
+👉 Easy way to remember:
+content-box = “content only, extras make it bigger.”
+border-box = “whole box fixed, extras fit inside.”
+
+what is display-display is a property that how the page will render , means hwo it looks, what looks the elements-<p>,<a>,<h1>,<span> etc.
+there are different display properties avaliable like-inline,block,none,inline-block.
+what are block elements-always in new line,width will be from extreme left to extreme right,custom width/height are respected,customw margin/padding are respected means they will be in usual manner.
+
+span{
+            border: 30px dotted black;
+        }
+            <span>muskan</span>
+    <span>hello jiii</span>
+from this we come to know that span tag, anchor tag are inline elements.
+properties of inline elements- content in same line, width will be content width not from left to right.,custom width/heigth will not apply,custom margin/padding only horizontal margin will visible not vertical.
+also,  inline elements can be converted into block and vice-versa it is possible.
+also inline-block, also available which means that the elements behave like inline but can custom width/height, this means inline-block.
+now, display:none; display: none = vanish completely.
+visibility: hidden = invisible but still takes space.
+ 
+NOW,CSS POSITION PROPERTY-
+means how the elements are positioned in web page,the various position property available which are- static which is by default,  relative , fixed , absolute , sticky.
+see, if u type to bring the image from top 60 px,bottom,left and right,from where u can see from where should coming to bottom by from which original-original will be static that is current window. the chnage will not occur, bcz by default twh web page is static so, need to chmage its stuts by this syntx-
+.img2{
+        position: relative;
+        top: 80px;;
+    }
+ <img src="images/kitten2.jpg" alt="kitten2" class="img2">
+, in relative position the gap from orginal to the changes u apply , will be same, means the gap will be visible to u it iwll not be taken by any other image.
+, now in absolute position, from where can come to bottom , from relative and in relative position , from current window.
+what is absolute-absolute overlaps .
+abs- :relative to its closest ancestor.
+     :gap is not maintained.
+     :also use top,left,right,bottom.
+,now,fixed position- .img4{
+        position: fixed;
+    }
+means that image will be fixed no other position will be applied., but there is same property in sticky position, which measn that the position will be stick and also apply top,left,,, or background-color, means the u have to apply this bcz this is manadtory witout this sticky will not be applied.
+
+
