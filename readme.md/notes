@@ -449,3 +449,146 @@ also, overflow: scroll; from scroll will be in both directions
 also, overflow: visible;, from this overflow content also see .
 also, overflow: auto;,  from this scroll will be in 1 direction.
 
+NOW,FLEXBOX-
+it is a powerful tool for creating layouts, layouts itself means that which displays , so, how it displays first which text the which text in differnt font-sizes, appear, then in which background color,in which size, which iamge shoukd be ther, iun diffetnt sizes.etc,all the content will be in recatngular box. these are called layouts.
+the content which arranged in manner is called layouts.
+full form of flexbox is flexible box(1-D Layout method)
+the flex model, we see a box, it is a parent container called flex container, in flex container, ther are diffenrent items called flex items.also the axes, which is horizontal and vertical axes, by,default the horizontal axes is called main axes, and vertical axis is called cross axis.
+now to create a flex container, in a container, mark display to flex, then the items in teh flex container will be flex ietms.see the syntax-
+<style>
+        .container{
+            background-color: palevioletred;
+            
+            border: 3px dotted black;
+            display: flex;
+        }
+        #box1{
+            background-color: orchid;
+            width: 100px;
+            height: 100px;
+
+        }
+        #box2{
+            background-color: fuchsia;
+            width: 100px;
+            height: 100px;
+
+        }
+        #box3{
+            background-color: darkred;
+            width: 100px;
+            height: 100px;
+
+        }
+        #box4{
+            background-color: darkolivegreen;
+            width: 100px;
+            height: 100px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum consectetur, quidem omnis animi voluptates modi quod excepturi amet perferendis iusto commodi dolorem. Nihil maxime magnam veniam repudiandae, expedita corporis, repellat iste laudantium cum voluptates, commodi excepturi. Tenetur, ratione vel, totam dignissimos assumenda blanditiis labore, maxime dolores ab excepturi voluptates iure.
+    </p>
+    <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+
+    </div>
+, now flex-direction means the boxes should in which dircetion , by defaukt it is set to row,if flex-direction:column, so, all boxes come in column insteda of row.
+u cana lso set to flex dircetion to row. also , if u do flex-direction: row-reverse, this means the arrangement of boxes u will see from righto left in reverse color box order.as like flex-direction: column-reverse;
+the flex-wrap: wrap; means when u "inspect" u squeeze teh webpage, boxes the width size will be decrease, but if u apply flex-wrap: wrap;this will maintain the iwdth until teh space is avalibale.
+flex-wrap has different values, called wrap,nowrap,warp-reverse, the boxes color will be in reverse oder color, when u squeeze it.
+now, what is flex-flow --> 
+<!-- Summary
+- **`flex-flow`** is a shorthand property in CSS.  
+- It combines **`flex-direction`** (row, column, etc.) and **`flex-wrap`** (wrap, nowrap, wrap-reverse).  
+- Saves you from writing both separately.  
+
+###  Syntax
+```css
+flex-flow: <flex-direction> <flex-wrap>;
+```
+
+###  Examples
+```css
+.container {
+  display: flex;
+  flex-flow: row wrap;       /* Horizontal + wrapping */
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;  /* Vertical + no wrapping */
+}
+
+now,justify-content, can apply to put teh content innjustify manner, 
+justify-content: center;
+justify-content: start;
+justify-content: end;
+from this-
+justify-content: space-around;
+the boxes will have equal space , lwft to right space will be same, that's why the space b/w the boxes will be same, bcz the space-around is have same space left toright so, firstbox right space + secondbox left space will be same so, ot looks like the space b/w the boxes will be same.
+now,justify-content: space-between;
+    justify-content: space-evenly;
+now, height: 900px;
+              align-items: center;
+, align-items works in cross axes , means the align -ietms to be center this means teh boxes willbe in cenyer og cross axes that is vertical one.
+now, align-items: stretch; this will be strech teh boxes if u remove the ehights of specific boxes u wnat to strecth it.
+even,ifu remove strect and remove the heights of differnt boxes, then by defsult teh boxes appear to be in stretch mannar.
+**justify content works in main axes,a nd alignitms orks in cross axes.
+**if u do justify-content: center;
+            height: 900px;
+            align-items: center;
+and add padding and margin in different boxes, so, so,  u will see boxes in middle of web page, a thin line.
+now, align-content: start  , means teh multiple conetnt to be placed in starting, means no space is in b/w the boxes when u do inspect.
+also, align-conten: end;
+align-conten: center;
+
+now, order property from tis u can put the boxes in different sequence.
+Visual order will be: Box B → Box C → Box A  
+(because -1 comes before 0, and 2 comes last).
+
+now,flex-shrink :5; u can do
+ flex-grow: 5; u can grow it 5 times the box u want to grow insteda of its size, it grows extra.
+now, a shorthand notation, flex: size(flex-grow)  size(flex-shrink) size(flex-basis)
+what is flex-basis - its css property sets the initial main size of a flex item,it sets the size of teh content box unless otherwise set with box-sizing.
+syntax-flex: 4 5 5px;
+now,align-self : center;
+ u align that specific box in ceneyr but it works in verrtical direction that is cross axes.
+
+**
+### 📌 Summary
+- **`align-content`** controls how **multiple flex lines** are spaced along the **cross axis**.  
+- It only works when items **wrap** (`flex-wrap: wrap` or `wrap-reverse`) and there is **extra space** in the container.  
+- If you have just one line of items, it has **no effect**.  
+### ⚙️ Syntax
+```css
+align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch;
+### 🧩 Values
+- `flex-start` → lines packed at the start  
+- `flex-end` → lines packed at the end  
+- `center` → lines packed in the middle  
+- `space-between` → equal space between lines, none at edges  
+- `space-around` → equal space around each line  
+- `space-evenly` → equal space between and around lines  
+- `stretch` → lines stretch to fill the container  
+👉 Difference from `align-items`:  
+- `align-items` = aligns **items within a single line**.  
+- `align-content` = aligns **the lines themselves** when wrapping occurs.  
+
+so,far studied in flex-box, which has flex-container and flex-items==
+in flex-container==                      in flex-items==
+display                                  order
+flex-direction                           flex-grow
+flex-wrap                                flex-shrink
+flex-flow                                flex-basis
+justify-content                          flex
+align-items                              align-self
+align-content
+
