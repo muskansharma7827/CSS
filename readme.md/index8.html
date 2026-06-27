@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 1000px;
+            height: 1000px;
+            border: solid 5px black;
+            display: flex;
+        }
+        #boxleft{
+            width: 350px;
+            height: 350px;
+            border: 3px solid blue;
+        }
+         #boxright{
+            width: 350px;
+            height: 350px;
+            border: 3px solid blue;
+        }
+        @media (min-width: 200px) and (max-width: 500px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="boxleft">
+            <p>
+                text1
+            </p>
+            <p>
+                text2
+            </p>
+        </div>
+        <div id="boxright">
+            <img src="images/kitten1.jpg" height="300px" width="350px">
+        </div>
+    </div>
+</body>
+</html>

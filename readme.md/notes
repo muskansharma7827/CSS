@@ -118,17 +118,17 @@ there are these 4 selectors used to apply styling to specifc elements- element,i
   p,article{
         width: 500px;
      }
-u can group the elements and cab apply styling .
-but, if u want to apply styling to teh calss of element ,so, use below syntax.
+u can group the elements and can apply styling .
+but, if u want to apply styling to the class of element ,so, use below syntax.
      p.paraclass{
         text-align: center;
      }
 
 now, see fonts and colors in css-
-what are fonts-fronts is the unit like we say my house is 60km far from colg, my car is at 90 km/hr on highway, etc.so, this is like pixel, theer are 2 types of poxels, physical and digital pixel
+what are fonts-fonts is the unit like we say my house is 60km far from colg, my car is at 90 km/hr on highway, etc.so, this is like pixel, theer are 2 types of poxels, physical and digital pixel
 ->physical pixel is 1/96 inch  .
 
-now, if u donot want the font-family which is alreday avaible that is web safe fonts., but u want other fonts, so, type googlefonts on google and then 
+now, if u donot want the font-family which is already availble that is web safe fonts., but u want other fonts, so, type googlefonts on google and then 
 u can click get font and then get embedded code, and copy link part and also copy font-faliy only then see, 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -151,11 +151,11 @@ rgb(255,0,0) - pure red color
 rgb(0,255,0) - pure green color
 rgb(0,0,255) - pure blue color
  aslo, rgba(0,0,0,0) - its black color,
- if u write rgba(245,123,23,1)- means it shows the transparent but if shows u do last 1 to 0 is it iwll not hsow color, onpy white bcz transparent capacity u made it to 0, so, this a is alpha, this a can be 0 to 1.
+ if u write rgba(245,123,23,1)- means it shows the transparent but if shows u do last 1 to 0 is it will not show color, only white bcz transparent capacity u made it to 0, so, this a is alpha, this a can be 0 to 1.
  now, see the hexadecimal, value , iot shows like "#ffffff", these 6 f converts like firts 2 f represnts red color value, middle 2 f represents green color value, last 2 f represents blue color value.u can do loke- #111111,#ff12ab, etc.
  Hex codes are based on the hexadecimal numbering system (base-16). This system only allows 16 specific characters to represent numbers from 0 to 15:Numbers: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9Letters: a, b, c, d, e, f (where A=10, B=11, C=12, D=13, E=14, F=15)
 like #1111ff03, extra 2 digits at last is alpha value.
- background-color: hsl(187, 94%, 50%), h is hue, means 0,360 means red, 120 means green, 240 means blue.satruration means the intensity of color,l means lightness, also hsla, means alpha, means transparency.
+ background-color: hsl(187, 94%, 50%), h is hue, means 0,360 means red, 120 means green, 240 means blue.saturation means the intensity of color,l means lightness, also hsla, means alpha, means transparency.
 
 now, Box Model-
 in css box model, around the box, can apply teh border.
@@ -233,7 +233,7 @@ see, if u type to bring the image from top 60 px,bottom,left and right,from wher
         top: 80px;;
     }
  <img src="images/kitten2.jpg" alt="kitten2" class="img2">
-, in relative position the gap from orginal to the changes u apply , will be same, means the gap will be visible to u it iwll not be taken by any other image.
+, in relative position the gap from orginal to the changes u apply , will be same, means the gap will be visible to u it will not be taken by any other image.
 , now in absolute position, from where can come to bottom , from relative and in relative position , from current window.
 what is absolute-absolute overlaps .
 abs- :relative to its closest ancestor.
@@ -267,7 +267,7 @@ what is a size unit-
             width: 25%;
 
         }
-this is teh code, teh o/p will be like first spring green will be wuhcih is 50% of full width that is 100%, then if u do that both boxes style have same width let'ssay, 75%, so wi h co,or will be show tp u , that is violet not spppringgreeb, bcz parent box, have styled first and then second one, but if u want ot see, second color do decrease its size .
+this is the code, the o/p will be like first spring green will be wuhcih is 50% of full width that is 100%, then if u do that both boxes style have same width let'ssay, 75%, so wi h co,or will be show tp u , that is violet not spppringgreeb, bcz parent box, have styled first and then second one, but if u want ot see, second color do decrease its size .
 then what is vw, vh, is view width and view height. spo, its syntax is like, 
 <div class="container">
         Hello,everybody.
@@ -278,7 +278,7 @@ then what is vw, vh, is view width and view height. spo, its syntax is like,
             height: 100vh;
             width: 50vw;
         }
-, u will see the fyull view port is bordered,apply color, and height iwll be 100vh, means 100 view height, full voew port willbe bordered, tec.,id u had only this code, but if u have 
+, u will see the full view port is bordered,apply color, and height will be 100vh, means 100 view height, full view port willbe bordered, tec.,id u had only this code, but if u have 
        *{
             margin: 0;
             padding: 0;
@@ -393,11 +393,11 @@ now,em and rem unit-
     </div>
 , the hello jii has same configuration, but in welcome, font-size default-16px, and u have taken padding , 30em, so,16*30px=480px.paddings.
 
-now, rem is alos like default font-size is 16px, so, apply font-size=50rem , so, in o/p, the font-size will be 800px, which is 16*50px, u canhs ee by dioijg eacha n evrytghing done, so fare by clicking inspect.
+now, rem is alos like default font-size is 16px, so, apply font-size=50rem , so, in o/p, the font-size will be 800px, which is 16*50px, u can see by doing each and everything done, so far by clicking inspect.
 font-size800px.
 
 NOW,FLOAT AND CLEAR,
-, u have seen , inw ebsites, there will be an image at 1 end, and somtng written abvout it, with the image , not fater the image, this can be done usiung float.
+, u have seen , in websites, there will be an image at 1 end, and somtng written abvout it, with the image , not fater the image, this can be done usiung float.
 the float property in css is used for positionung and layout on web pages, a common usage might be floating an image to 1 side and letting text wrap around it, the synatx will be like-
 , what clear do, if, there are 2 images in right, so, u wnat frist right and second right, so, if u wnat first right, ther shukd not be any iamge in right direction, so, in style tag, un that image, write clear:right
 now, the collapse, 
@@ -429,7 +429,7 @@ now, the collapse,
         <div class="item">B</div>
         <div class="item">C</div>
     </div>
-, now, if u remove overflow, the box border collapses , to prevent collapses app,y overflow, ther alos differenty overflow,
+, now, if u remove overflow, the box border collapses , to prevent collapses apply overflow, ther also differenty overflow,
 if u do this,
 <style>
         .container{
@@ -500,9 +500,9 @@ now to create a flex container, in a container, mark display to flex, then the i
         <div class="box" id="box4"></div>
 
     </div>
-, now flex-direction means the boxes should in which dircetion , by defaukt it is set to row,if flex-direction:column, so, all boxes come in column insteda of row.
-u cana lso set to flex dircetion to row. also , if u do flex-direction: row-reverse, this means the arrangement of boxes u will see from righto left in reverse color box order.as like flex-direction: column-reverse;
-the flex-wrap: wrap; means when u "inspect" u squeeze teh webpage, boxes the width size will be decrease, but if u apply flex-wrap: wrap;this will maintain the iwdth until teh space is avalibale.
+, now flex-direction means the boxes should in which dircetion , by defaukt it is set to row,if flex-direction:column, so, all boxes come in column instead of row.
+u can also set to flex direction to row. also , if u do flex-direction: row-reverse, this means the arrangement of boxes u will see from right to left in reverse color box order.as like flex-direction: column-reverse;
+the flex-wrap: wrap; means when u "inspect" u squeeze teh webpage, boxes the width size will be decrease, but if u apply flex-wrap: wrap;this will maintain the width until the space is avalibale.
 flex-wrap has different values, called wrap,nowrap,warp-reverse, the boxes color will be in reverse oder color, when u squeeze it.
 now, what is flex-flow --> 
 <!-- Summary
@@ -538,21 +538,22 @@ now,justify-content: space-between;
     justify-content: space-evenly;
 now, height: 900px;
               align-items: center;
-, align-items works in cross axes , means the align -ietms to be center this means teh boxes willbe in cenyer og cross axes that is vertical one.
+, align-items works in cross axes , means the align -items to be center this means the boxes willbe in center of cross axes that is vertical one.
 now, align-items: stretch; this will be strech teh boxes if u remove the ehights of specific boxes u wnat to strecth it.
 even,ifu remove strect and remove the heights of differnt boxes, then by defsult teh boxes appear to be in stretch mannar.
-**justify content works in main axes,a nd alignitms orks in cross axes.
+**justify content works in main axes,a nd align items orks in cross axes.
 **if u do justify-content: center;
             height: 900px;
             align-items: center;
 and add padding and margin in different boxes, so, so,  u will see boxes in middle of web page, a thin line.
-now, align-content: start  , means teh multiple conetnt to be placed in starting, means no space is in b/w the boxes when u do inspect.
+now, align-content: start  , means the multiple conetnt to be placed in starting, means no space is in b/w the boxes when u do inspect.
 also, align-conten: end;
 align-conten: center;
 
-now, order property from tis u can put the boxes in different sequence.
+now, order property from this u can put the boxes in different sequence.
 Visual order will be: Box B → Box C → Box A  
 (because -1 comes before 0, and 2 comes last).
+order: 500. the least value of all items;
 
 now,flex-shrink :5; u can do
  flex-grow: 5; u can grow it 5 times the box u want to grow insteda of its size, it grows extra.
@@ -592,3 +593,69 @@ justify-content                          flex
 align-items                              align-self
 align-content
 
+NOW,MEDIA QUERY-
+what is a responsive design- it is a design when u see websites like code help, on pc, it will look like good, when the isze decreases when u see in phone it also looks good, this good actually means the etxt, video,image,is not missing when u see in different devices, but it shifted , still looks good, this is called responsive design.
+now, media query is to  apply css on different devices with different display is u can do with help of media query.
+syntax-
+<style>
+        .box{
+            background-color: hotpink;
+            border: dotted 5px purple;
+            height: 500px;
+            width: 500px;
+        }
+            @media  (max-width:400px){
+                .box{
+                    background-color: brown;
+                    
+                }
+                
+            }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is Muskan.
+    </div>
+, write this, and see, 0-500 is brown color, and after 500, it is pink color, in inspect.
+also,@media (min-width:200px) and (max-width:400px){
+                .box{
+                    background-color: darkslategray;
+                }
+            }
+now, if all the <div> elements share the same class name, then the CSS you define for that class will apply to all of them.
+next,if u see any website in laptop, the video atright side(row), if u see the same website in phone, the video will at bottom(column),this is a good concept, and how can we achieve it , by doing flex-direction: columnn if the width (min and max) to a specific range, it will show the text, box, etc, in column the syntax -
+    <style>
+        .container{
+            height: 400px;
+            width: 400px;
+            border: 5px solid deeppink;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .box{
+            height: 200px;
+            width: 100px;
+            border: 3px solid black;
+            margin: 4px;
+            padding: 4px;
+            background-color: aqua;
+        }
+        @media (min-width:200px) and (max-width:500px){
+            .container{
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+    </div>
+    
+now, ,min-width: 200px means (0-199) and max-width: 500px means (200-500)
