@@ -659,3 +659,76 @@ next,if u see any website in laptop, the video atright side(row), if u see the s
     </div>
     
 now, ,min-width: 200px means (0-199) and max-width: 500px means (200-500)
+
+
+NOW,SHADOWS IN CSS, -
+can render shadow on web page , like in a box, u can render shadow, and in a text u can also render it. 
+There are 2 types of shadows - Box and Text shadows.
+** if there are 2 container-parent(container) and child(box), so, u have to bring the child box to center, so, do changes in container that's parent one, like 
+ .container{
+            width: 100%;
+            height: 1000px;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+},
+donot add justify-content to box , add it to container.
+and even, u should know that container is flex container and the items in it, is flex-items, so,the properties it is like that,
+in flex-container==                      in flex-items==
+display                                  order
+flex-direction                           flex-grow
+flex-wrap                                flex-shrink
+flex-flow                                flex-basis
+justify-content                          flex
+align-items                              align-self
+align-content
+
+, when add the shadows there are offsets, like x-offset and y-offset, syntax-
+ /*box-shadow: 35px 70px black; */
+            /*box-shadow: -70px 20px black;*/
+            box-shadow: 20px -45px black;
+, - means the opposite side,the more the pixel , more width of shadow, first x-offset y-offset color
+'-' means the opposite direction , it has no role in increasing/decreasing the pixel-size.
+,  box-shadow: 20px 15px 10px brown ; now, it means x-offset y-offset blur-radius color
+if , box-shadow: 20px 15px -10px brown ;
+        }
+means in o/p- there will not be any box-shadow, as blur radius donot exist.
+now,box-shadow: 10px 15px 20px 65px brown;
+the fourth-65px is spread radius, upto which extent the shadow will spread.
+**the term pixel values in CSS (like 100px, 1000px) can technically be any large number.
+now, by default the shadow is outside, but if u want the shadow inside, so, the syntax-
+ box-shadow: inset 10px 15px blue;
+by adding a keyword inset.
+now, if u want to add the multiple shadows, the syntax is like-
+box-shadow: 5px 8px red,14px 18px lightskyblue;
+o/p, firstly the first shadow applied and the  second shadow.
+**now, important thing, if u are making a web page, and later u realise it that the color is not suitable and u want to change so, so, use variable , it is like an empty box,
+syntax-
+.box{
+            --primary-color: beige;
+            --custom-width: 570px;
+        
+            width: var(--custom-width);
+            height: 700px;
+            margin: 3px;
+            padding: 3px;
+            border: 3px solid black;
+            background-color: var(--primary-color);
+}
+now, this primary- color and custom-width is only utilised in specific barces only in box, not the container, or other braces, is there any other way to utilise it on the whole web page,yes
+syntax-
+:root{
+            --primary-color: beige;
+            --custom-width: 570px
+
+        }
+
+now, text shadow,the different ways to add text-shadow-
+/*text-shadow: 10px 15px pink;*/
+            /*text-shadow: -10px -15px 1px  pink;*/
+            /*text-shadow: purple 10px 15px;*/
+            text-shadow: 10px 15px;(**imp- by default the color of the text-shadow is black).
+now, to add multiple text-shadows-
+  text-shadow: 10px 15px pink, 20px -25px plum,-30px 35px peachpuff, -40px -45px purple;
+   
+

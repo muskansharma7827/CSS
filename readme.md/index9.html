@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color: darkgrey;
+            --custom-width: 570px
+
+        }
+    
+        .container{
+            width: 100%;
+            height: 1000px;
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .box{
+            /*--primary-color: beige;
+            --custom-width: 570px;
+            */
+        
+            width: var(--custom-width);
+            height: 700px;
+            margin: 3px;
+            padding: 3px;
+            border: 3px solid black;
+            background-color: var(--primary-color);
+            /*box-shadow: 35px 70px black; */
+            /*box-shadow: -70px 20px black;*/
+            /*box-shadow: 20px -45px black;*/
+            /*box-shadow: 20px 15px -10px brown ;*/
+            /*box-shadow: 10px 15px 0px 1000px brown;*/
+            /*box-shadow: inset 10px 15px blue;*/
+            /*box-shadow: 5px 8px red,14px 18px lightskyblue;*/
+
+
+        }
+        p{
+            font-size: 25px;
+        }
+        img{
+            height: 300px;
+            width: 300px;
+        }
+        h1{
+            /*text-shadow: 10px 15px pink;*/
+            /*text-shadow: -10px -15px 1px  pink;*/
+            /*text-shadow: purple 10px 15px;*/
+            /*text-shadow: 10px 15px; */
+            text-shadow: 10px 15px pink, 20px -25px plum,-30px 35px peachpuff, -40px -45px purple;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="box">
+            <img src="https://www.ibm.com/brand/experience-guides/developer/8f4e3cc2b5d52354a6d43c8edba1e3c9/02_8-bar-reverse.svg">
+            <h1>IBM</h1>
+            <p>Developers like their communications and social media to look like their code—essential and direct. Social media avatars follow the brand palette and templates provide a ready framework for you to amplify the IBM Developer brand.
+
+Website
+Social presence
+Social tiles
+Animated social tiles
+Web banners</p>
+        </div>
+     </div>
+</body>
+</html>
